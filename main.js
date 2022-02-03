@@ -34,5 +34,6 @@
       events: []
     });
     events = localStorage.getItem('events')
+    events = JSON.parse(events)
     calendar.render();
   });
